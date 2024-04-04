@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat:wght@300&family=Noto+Sans+Kawi&family=Raleway:wght@300&family=Roboto&display=swap");
+
+/*-------------------Regles generales */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  /* 14px par défaut */
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-family: 'Noto sans', sans-serif; */
+  font-family: "Noto Sans Kawi", sans-serif;
+}
+
+a,
+a:hover,
+a:visited {
+  /* ATTENTION LES LIENS SONT BLANC */
+  /* DANS CE MODELE*/
+  color: #000;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+* {
+ // background-color: #F2F8FC;
+}
+
+/*------------------- le header */
+header {
+  /* height: 10vh;
+  padding: 1vh 5vw 1vh 5vw; */
+  display: flex;
+  /* align-items: center; */
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  margin-left: 2rem;
+  flex: 1 1 0%;
+  /* flex grow a 1 permet au h1 de grossir */
+}
+
+i {
+  color: rgb(30, 48, 80);
+}
+
+.header__menuItem {
+  display: inline-block;
+  padding: 0.75vw;
+}
+
+.header__logo {
+  width: 20vw;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: center;
+  /* padding-top: 10%; */
+}
+
+

@@ -16,13 +16,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from .views import index
+from .views import index, connexion
 from todotask.views import index as task_index
+from todotask.views import add_task
 from wallet.views import index as wallet_index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
     path('task/', task_index),
+    path('task-add/', add_task),
     path('wallet/', wallet_index),
+    path('connexion/', connexion),
+    # path("services/", views.services, name="services"),
+    # path("connexion/", views.connexion, name="connexion"),
+    # path("contact/", views.contact, name="contact"),
 ]

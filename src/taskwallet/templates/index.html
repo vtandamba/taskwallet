@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1> mon site {{ date|date }}</h1>
-</body>
-</html>
+{%extends 'taskwallet/templates/base.html'%}
+{% block content %}
+
+<p> Aujourd'hui on est le {{ date|date }}. Il est {{ date|time }}</p>
+
+{% endblock %}
